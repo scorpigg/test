@@ -63,5 +63,5 @@ __Courses:__
 
 ### Education
 Izhevsk State Technical University'13 - Mechanical engineering
-####English
+### English
 At the moment, the level of English is __Pre-intermediate__, but every day I improve my knowledge with using sites [Lingualeo](https://Lingualeo.com), [Duolingo](https://duolingo.com).
