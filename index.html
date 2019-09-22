@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>My profile</title>
+</head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <section class="about-me">
+          <div class="me">
+            <h1>Andrey Nikitin</h1>
+            <img src="/img/photo.jpg" alt="Me" width="200" height="200">
+          </div>
+          <div class="contact-info">
+            <h3>Contact info:</h3>
+            <ul class="contacts">
+              <li><b>City:</b> Izhevsk</li>
+              <li><b>Cell-phone number:</b> +7 905 875 65 58</li>
+              <li><b>e-mail:</b> scorpigg@yandex.ru</li>
+            </ul>
+          </div>
+        </section>
+        <hr>
+        <section class="summary">
+          <h3>Summary</h3>
+          <span>
+              Currently, the IT industry is developing very intensively, as a result, IT companies more and more require programmers. But really literate specialists are not so many, since most want everything at once. My goal is to become a competent and demanded front-end developer, learn to write beautiful, high-quality code and become part of one of the most demanded companies in the world. Let it take a lot of effort and time, but I think it’s worth it.
+          </span>
+        </section>
+        <hr>
+        <section class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>Front-end development: HTML, CSS, JS <i>(+jQuery)</i></li>
+            <li>Back-end development: PHP, MySQL</li>
+            <li>Other: Photoshop</li>
+          </ul>
+        </section>
+        <hr>
+        <section class="latest-code">
+          <h3>Latest code</h3>
+          <pre><i>
+  $('.saveNewsBtn').on('click', function(){
+    var modalNewsTitle = $('#modalNewsTitle').val();
+    var modalNewsAuthor = $('#modalNewsAuthor').val();
+    var modalNewsDate = $('#modalNewsDate').val();
+    var attrID = $('.modalNewsForm').attr('attr-id');
+    
+    $.ajax({
+      url:'ajax.php?action=editNews',
+      success:function(data){
+        if(data == 'edited'){
+          $('.modalNewsForm').hide();
+          location.reload();
+        }
+      },
+      data:{
+        'newsTitle': modalNewsTitle,
+        'newsAuthor': modalNewsAuthor,
+        'newsDate': modalNewsDate,
+        'newsID': attrID
+      }
+    }) 
+  })
+
+  $('.delNews').on('click', function(){
+    var attrID = $(this).closest('.newsBlock').attr('attr-id');
+    var news = $(this).closest('.newsBlock');
+    $.ajax({
+      url:'ajax.php?action=delNews',
+      success:function(data){
+        if(data == 'deleted'){
+          news.hide(300);
+        }
+      },
+      data:{
+        'newsID': attrID
+      }
+    }) 
+  })
+         </i></pre>
+        </section>
+        <hr>
+        <section class="experience">
+          <h3>Experience</h3>
+          <h4>Courses:</h4>
+          <ul>
+            <li><a href="https://htmlacademy.ru/profile/id889231"> HTML Academy</a>: HTML, CSS, JS</li>
+            <li><a href="https://www.codecademy.com/profiles/scorpik">Codeacademy</a>: HTML, CSS</li>
+            <li><a href="https://broacademy.brolib.ru/">BroAcademy</a> : HTML, CSS, JS, PHP, MySQL <i>(from 01.03.2019 till now)</i></li>
+          </ul>
+        </section>
+        <hr>
+        <section class="education">
+          <h3>Education</h3>
+          <span>Izhevsk State Technical University’13 - Mechanical engineering</span>
+        </section>
+        <hr>
+        <section class="english">
+          <h3>English</h3>
+          <span>At the moment, the level of English is Pre-intermediate, but every day I improve my knowledge with using sites:</span>
+          <ul>
+            <li><a href="https://lingualeo.com/">Lingualeo</a></li>
+            <li><a href="https://duolingo.com/">Duolingo</a></li>
+          </ul>
+        </section>
+        <hr>
+      </main>
+      <footer>
+        <h4 class="create-info">Created by Andrey Nikitin</h4>
+      </footer>
+    </div>
+  </body>
+</html>
