@@ -54,3 +54,14 @@ My goal is to become a competent and demanded front-end developer, learn to writ
     }) 
   })
   ```
+### Experience
+__Courses:__
+
+* [HTML Academy](https://htmlacademy.ru/profile/id889231): HTML, CSS, JS
+* [Codeacademy](https://www.codecademy.com/profiles/scorpik): HTML, CSS
+* [BroAcademy](https://broacademy.brolib.ru/): HTML, CSS, JS, PHP, MySQL (from 01.03.2019 till now)
+
+### Education
+Izhevsk State Technical University'13 - Mechanical engineering
+####English
+At the moment, the level of English is __Pre-intermediate__, but every day I improve my knowledge with using sites [Lingualeo](https://Lingualeo.com), [Duolingo](https://duolingo.com).
